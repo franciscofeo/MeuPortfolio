@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a:active, a:selected, a:visited { 
+    border: none;
+    outline: none;
+}
+
+button{
+    outline-style: none !important;
+}

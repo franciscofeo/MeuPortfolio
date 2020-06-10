@@ -1,0 +1,8 @@
+.pag-principal{
+    padding-top: 115px;
+    height: 100vh;
+
+    background-image: url(../img/bkg-img1-grape.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}

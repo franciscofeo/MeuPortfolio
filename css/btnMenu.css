@@ -1,0 +1,46 @@
+/* MENU */
+
+.navbar{
+    position: fixed !important;
+}
+
+.bg-light{
+    background-color: #9940FF !important;
+}
+
+.navbar-toggler{
+    border: none !important;
+}
+
+.navbar-toggler-icon{
+    background-image: url(../img/hamburguer-menu.svg) !important;
+    height: 45px;
+    width: 45px;
+    background-size: contain;
+    transform: rotate(0deg);
+    animation-name: rotationIcon;
+    animation-iteration-count: infinite;
+    animation-duration: .9s;
+}
+
+/* TEXT IN MENU */
+
+.nav-link{
+    color: white !important;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+}
+
+/* ****************** */
+/* ANIMATION */
+
+@keyframes rotationIcon{
+    0%, 100%{
+        transform: rotate(-5deg) scale(1) ;
+    }
+    50%{
+        transform: rotate(5deg) scale(1.05);
+    }
+
+}
