@@ -1,8 +1,51 @@
+/* HOMEPAGE */
+
 .pag-principal{
-    padding-top: 130px;
+    padding-top: 80px;
     height: 100vh;
 
     background-image: url(../img/bkg-img1-grape.svg);
     background-repeat: no-repeat;
     background-position: bottom;
+
 }
+
+.pag-principal h4{
+    padding-top: 40px;
+    font-family: 'Taviraj', serif;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.pag-principal h3{
+    font-size: 22px;
+    text-align: left;
+    margin-top: 0;
+}
+
+/* ***************************** */
+/* Seção Informações */
+
+.info-text{
+    background: rgb(153,64,255);
+    background: linear-gradient(135deg, rgb(132, 51, 207) 26%, rgb(78, 134, 238) 100%);
+
+}
+
+.sobre-text, .habilidades-text, .projetos-text{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid white;
+    padding: 15px;
+
+    transition: all .5s;
+}
+
+.sobre-text:hover, .habilidades-text:hover, .projetos-text:hover{
+    border: 1px solid black;
+    box-shadow: 5px 5px 35px 1px black;
+}
+
+/* ******************************** */

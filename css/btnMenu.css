@@ -1,7 +1,7 @@
 /* MENU */
 
 .navbar{
-    position: fixed !important;
+    position: absolute !important;
 }
 
 .bg-light{
@@ -27,9 +27,21 @@
 
 .nav-link{
     color: white !important;
-    padding: 15px 20px;
-    font-size: 20px;
+    padding: 20px 10px;
+    width: 90%;
+    margin-left: 15px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+
+    transition: all .6s;    
     border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+}
+
+.nav-link:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: #9940ff !important;
+    border-radius: 10px;
 }
 
 /* ****************** */

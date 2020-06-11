@@ -7,28 +7,33 @@
     <title>Francisco Angelo</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Taviraj:wght@500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/btnMenu.css">
     <link rel="stylesheet" href="css/sections.css">
+
+
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span> 
+            <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"> 
-                    <a href="#" class="nav-link">Sobre Mim</a>
+                <li class="nav-item">
+                    <a href="#sobre-mim" class="nav-link">Sobre Mim</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Habilidades</a>
+                    <a href="#habilidades" class="nav-link">Habilidades</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Projetos</a>
+                    <a href="#projetos" class="nav-link">Projetos</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Contato</a>
@@ -39,12 +44,51 @@
 
     <section id="homepage">
         <div class="pag-principal text-center container-fluid">
+            <h3>Olá, muito prazer :)</h3>
             <h4>Francisco &nbsp; Angelo <br> <br> Desenvolvedor &nbsp; Front-End</h4>
         </div>
     </section>
 
+    <section class="info-text">
+        <div class="container-fluid text-center sobre-mim">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="sobre-text" id="sobre-mim">
+                            <h1><i class="far fa-user"></i></h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse finibus ligula vitae
+                                elit laoreet, non consectetur justo aliquam. Suspendisse viverra sapien in risus
+                                venenatis, eu tincidunt mi molestie. Maecenas egestas ut elit quis eleifend. Maecenas
+                                venenatis mattis mauris mattis tristique. Praesent ac metus efficitur nulla ullamcorper
+                                tristique vel quis velit. In hac habitasse platea dictumst. Cras at euismod ligula.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="habilidades-text" id="habilidades">
+                            <h1><i class="fas fa-laptop-code"></i></h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse finibus ligula vitae
+                                elit laoreet, non consectetur justo aliquam. Suspendisse viverra sapien in risus
+                                venenatis, eu tincidunt mi molestie. Maecenas egestas ut elit quis eleifend. Maecenas
+                                venenatis mattis mauris mattis tristique. Praesent ac metus efficitur nulla ullamcorper
+                                tristique vel quis velit. In hac habitasse platea dictumst. Cras at euismod ligula.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="projetos-text" id="projetos">
+                            <h1><i class="fas fa-tasks"></i></h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse finibus ligula vitae
+                                elit laoreet, non consectetur justo aliquam. Suspendisse viverra sapien in risus
+                                venenatis, eu tincidunt mi molestie. Maecenas egestas ut elit quis eleifend. Maecenas
+                                venenatis mattis mauris mattis tristique. Praesent ac metus efficitur nulla ullamcorper
+                                tristique vel quis velit. In hac habitasse platea dictumst. Cras at euismod ligula.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
+    <script src="https://kit.fontawesome.com/a0b0a336f4.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -54,22 +98,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-
-        <script>
-
-            function typeWriter(element){
-                const textArray = element.innerText.split("")
-                element.innerText = ""; // limpar o texto
-                textArray.forEach((letra,i) => {
-                    setTimeout(function(){
-                        element.innerText += letra;
-                    }, 90*i) // vai adicionar uma letra a cada 90ms
-                });                
-            }       
-        
-            const titulo = document.querySelector('h4');
-            typeWriter(titulo);
-                
-        </script>
+    <script src="js/title-effect.js"></script>
+    
 </body>
+
 </html>
