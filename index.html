@@ -24,7 +24,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse css-transitions-only-after-page-load" id="navbarNav">
                 <ul class="navbar-nav mr-auto ">
                     <li class="nav-item">
                         <a href="#sobre-mim" class="nav-link  link">Sobre Mim</a>
@@ -39,11 +39,11 @@
                         <a href="#" class="nav-link link">Contato</a>
                     </li>
                     <li class="nav-item">
-                        <a href="https://github.com/franciscofeo" target="_blank" class="nav-link github-icon"><i class="fab fa-github"></i></a></li>
+                        <a href="https://github.com/franciscofeo" target="_blank"
+                            class="nav-link github-icon icon-link"><i class="fab fa-github"></i></a></li>
                     <li class="nav-item">
-                        <a href="https://www.linkedin.com/in/francisco-angelo/" target="_blank" class="nav-link linkedin-icon"><i class="fab fa-linkedin-in"></i></a></li>
-
-
+                        <a href="https://www.linkedin.com/in/francisco-angelo/" target="_blank"
+                            class="nav-link linkedin-icon icon-link"><i class="fab fa-linkedin-in"></i></a></li>
                 </ul>
             </div>
         </nav>
@@ -52,7 +52,7 @@
     <section id="homepage">
         <div class="pag-principal text-center container-fluid">
             <h3>Olá, muito prazer :)</h3>
-            <h4 class="container-fluid">Francisco Angelo <br>  Desenvolvedor  Front-End;</h4>
+            <h4 class="container-fluid">Francisco Angelo <br> Desenvolvedor Front-End;</h4>
         </div>
     </section>
 
@@ -106,7 +106,12 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
     <script src="js/title-effect.js"></script>
-
+    <script>
+        $(document).ready(function () {
+            $(".css-transitions-only-after-page-load").each(function (index, element) {
+                setTimeout(function () { $(element).removeClass("css-transitions-only-after-page-load") }, 10);
+            });
+        });</script>
 </body>
 
 </html>
