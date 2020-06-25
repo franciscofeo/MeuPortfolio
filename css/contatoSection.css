@@ -1,0 +1,75 @@
+.hpLink{
+    transition: color .6s, background-color .6s !important;
+}
+
+
+.pag-contato{
+    background-image: url(../img/bkg-contato.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+
+    height: 100vh;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Roboto, sans-serif;
+}
+
+.pag-contato h3{
+    height: 40px;
+}
+
+.fa-github, .fa-linkedin-in, .fa-envelope{
+    font-size: 35px !important;
+    color: black;
+    transition: none  !important;
+    animation: rotateIcon .5s infinite;
+}
+
+@keyframes rotateIcon{
+    0%, 100%{
+        transform: rotate(-3deg);
+    }
+    50%{
+        transform: rotate(3deg);
+    }
+}
+
+.fab:hover{   
+    transform: none !important;
+}
+
+.pag-contato :nth-child(3){
+    height: 80px;
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media(min-width: 420px) and (max-width: 550px){ /* Mobile */
+    .pag-contato{
+        background-size: 80%;
+    }
+}
+
+@media(min-width: 551px) and (max-width: 900px){ /* Tablets */
+    .pag-contato{
+        font-size: 16px;
+        background-size: 60%;
+        background-position: 100% 100%;
+    }
+}
+
+@media(min-width: 901px){
+    .pag-contato{
+        font-size: 20px !important;
+        padding-top: 120px;
+        font-size: 20px;
+        background-size: 550px;
+        background-position: 100% 100%;
+    }
+    .fa-github, .fa-linkedin-in, .fa-envelope{
+        font-size: 50px !important;
+    }
+}

@@ -41,7 +41,7 @@
     font-family: 'Open Sans', sans-serif;
     overflow-y: hidden;
 
-    transition: all .6s;    
+    transition: color .6s, background-color .6s;    
     border-bottom: 1px solid rgba(0, 0, 0, 0.205);
 }
 
@@ -76,7 +76,7 @@
 .fab{
     color: white;
     font-size: 30px;
-    transition: all .6s;
+    transition: background-color .6s, transform .6s;
 }
 
 .fab:hover{
