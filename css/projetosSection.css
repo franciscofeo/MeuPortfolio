@@ -11,8 +11,29 @@
     font-family: Roboto, sans-serif;
 }
 
-img{
-    width: 100vw;
+.sitesExemplo{
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.grupos h3{
+    text-align: center;
+}
+
+.sitesExemplo p{
+    font-family: 'Roboto', sans-serif;
+    padding-top: 5px;
+}
+
+.grupos div:last-of-type{
+    border-bottom: none;
+}
+
+.sitesExemplo img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 7px;
+    width: 80vw;
 }
 
 
