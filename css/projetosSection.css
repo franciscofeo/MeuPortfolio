@@ -17,12 +17,18 @@
 }
 
 .grupos h3{
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
     text-align: center;
 }
 
 .sitesExemplo p{
     font-family: 'Roboto', sans-serif;
-    padding-top: 5px;
+    padding-top: 3px;
+}
+
+.grupos h3{
+    padding-bottom: 15px;
 }
 
 .grupos div:last-of-type{
@@ -53,6 +59,13 @@
         background-size: 60%;
         background-position: 100% 100%;
     }
+    .sitesExemplo p{
+        padding: 30px 20px;
+        font-size: 23px;
+    }
+    .pag-projetos p button{
+        font-size: 20px;
+    }
 }
 
 @media(min-width: 901px){
@@ -60,8 +73,27 @@
         font-size: 20px !important;
         padding-top: 120px;
         font-size: 20px;
-        background-size: 550px;
+        background-size: 470px;
         background-position: 100% 100%;
+    }
+
+    .pag-projetos p button{
+        font-size: 23px;
+    }
+
+    .grupos h3{
+        font-size: 35px;
+    }
+
+    .sitesExemplo p{
+        padding: 30px 20px;
+        text-align: center;
+        font-size: 23px;
+    }
+
+    .sitesExemplo img{
+        padding-top: 25px;
+        width: 50vw;
     }
 
 }
