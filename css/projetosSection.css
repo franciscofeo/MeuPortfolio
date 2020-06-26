@@ -1,0 +1,46 @@
+.pag-projetos{
+    background-image: url(../img/drawkit-grape-pack-illustration-8.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+
+    height: 100vh;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Roboto, sans-serif;
+}
+
+img{
+    width: 100vw;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+@media(min-width: 420px) and (max-width: 550px){ /* Mobile */
+    .pag-projetos{
+        background-size: 80%;
+    }
+}
+
+@media(min-width: 551px) and (max-width: 900px){ /* Tablets */
+    .pag-projetos{
+        font-size: 16px;
+        background-size: 60%;
+        background-position: 100% 100%;
+    }
+}
+
+@media(min-width: 901px){
+    .pag-projetos{
+        font-size: 20px !important;
+        padding-top: 120px;
+        font-size: 20px;
+        background-size: 550px;
+        background-position: 100% 100%;
+    }
+
+}

@@ -88,11 +88,14 @@
 
 @media(min-width: 990px){
     .link{
-        font-size: 20px;
+        font-size: 18px;
         margin-left: 20px;
         margin-right: 20px;
         border-bottom: none;
+        text-align: center;
+        border-radius: 5px;
     }
+
     .navbar-nav{
         height: 85px;
     }
@@ -103,4 +106,10 @@
     -moz-transition: none !important;
     -ms-transition: none !important;
     -o-transition: none !important;
+  }
+
+  /* Botão Projetos */
+
+  .btnProjetos{
+      font-size: 20px;
   }

@@ -13,3 +13,9 @@ a:active, a:selected, a:visited {
 button{
     outline-style: none !important;
 }
+
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
