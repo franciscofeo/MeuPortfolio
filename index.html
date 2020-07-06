@@ -1,40 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rick and Morty API Request</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Taviraj&display=swap" rel="stylesheet"> 
-    <script src="https://kit.fontawesome.com/d4739586da.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/mainStyle.css">
-    <link rel="stylesheet" href="css/navStyle.css">
+    <title>Francisco Angelo</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/btnMenu.css">
+    <link rel="stylesheet" href="css/sections.css">
+
+
 </head>
 
 <body>
-    <header class="optionList">
-        <nav>
-            <ul>
-                <li><a href="index.html">Homepage</a></li>
-                <li><a href="characters.html">Characters</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse css-transitions-only-after-page-load" id="navbarNav">
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item">
+                        <a href="#" onclick="smooth('.info-text')" class="nav-link  link">Sobre Mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" onclick="smooth('.info-text')" class="nav-link link">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projetos.html" class="nav-link link">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contato.html" class="nav-link link">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/franciscofeo" target="_blank"
+                            class="nav-link github-icon icon-link"><i class="fab fa-github"></i></a></li>
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/francisco-angelo/" target="_blank"
+                            class="nav-link linkedin-icon icon-link"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <section class="bkgPage">
-
-        <div class="txtTitle">
-            <p>Welcome! </br> </br> This is a website of Rick and Morty TV Show. Please select an option above and have fun! :)</p>
+    <section id="homepage">
+        <div class="pag-principal text-center container-fluid">
+            <h3>Olá, muito prazer :)</h3>
+            <h4 class="container-fluid">Francisco Angelo <br> Desenvolvedor Front-End;</h4>
         </div>
     </section>
 
-    <footer>Developed with  <i class="fas fa-heart"></i>  by Francisco Angelo <a href="https://github.com/franciscofeo" target="_blank"><i class="fab fa-github"></i></a></footer>
+    <section class="info-text">
+        <div class="container-fluid  sobre-mim">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="sobre-text" id="sobre-mim">
+                            <h1 style="text-align: center;"><i class="far fa-user"></i></h1>
+                            <p style="margin-top: 35px;">Meu nome é Francisco, tenho 20 anos e cultivo em mim uma grande paixão sobre Desenvolvimento Web na área de Front-end.</p>
+                            <p>Estou sempre atento às novidades do mundo da tecnologia e programação, pois sou uma pessoa que gosta muito de aprender coisas novas para assim evoluir profissionalmente. Também tenho bastante interesse em Design de Experiência do Usuário e Interface do Usuário. </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="habilidades-text" id="habilidades">
+                            <h1 style="text-align: center;"><i class="fas fa-laptop-code"></i></h1>
+                            <p style="margin-top: 35px;">Aqui estão as minhas principais habilidades sobre Desenvolvimento Web:
+                                <ul class="skillList">
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>JavaScript</li>
+                                    <li>Bootstrap</li>
+                                    <li>UX/UI Design</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>Desenvolvido com  <i class="fas fa-heart" style="color: red;"></i> por Francisco Angelo</footer>
 
-
-
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/a0b0a336f4.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="js/title-effect.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".css-transitions-only-after-page-load").each(function (index, element) {
+                setTimeout(function () { $(element).removeClass("css-transitions-only-after-page-load") }, 10);
+            });
+        });</script>
+    <script src="./js/smoothScroll.js"></script>
 </body>
 
 </html>
