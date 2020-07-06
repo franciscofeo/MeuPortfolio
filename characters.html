@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick and Morty API Request</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Taviraj&display=swap" rel="stylesheet"> 
+
     <script src="https://kit.fontawesome.com/d4739586da.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/mainStyle.css">
     <link rel="stylesheet" href="css/navStyle.css">
+    <link rel="stylesheet" href="css/sectionStyle.css">
 </head>
 
-<body>
-    <header class="optionList">
+<body style="background-color: #262c3a;">
+    <header class='optionList'>
         <nav>
             <ul>
                 <li><a href="index.html">Homepage</a></li>
@@ -23,18 +23,24 @@
         </nav>
     </header>
 
-    <section class="bkgPage">
+    <section class="resultsSection">
+        <form class="simpleForm" onsubmit="searchChar()">
+            <label for="charName">Enter a name: </label>
+            <input type="text" name="charName" id="charName">
+            <button type="submit">Send!</button>
+        </form>
 
-        <div class="txtTitle">
-            <p>Welcome! </br> </br> This is a website of Rick and Morty TV Show. Please select an option above and have fun! :)</p>
-        </div>
+        <ul class="charList"></ul>
+        
     </section>
 
-    <footer>Developed with  <i class="fas fa-heart"></i>  by Francisco Angelo <a href="https://github.com/franciscofeo" target="_blank"><i class="fab fa-github"></i></a></footer>
+    <footer class="footer">Developed with <i class="fas fa-heart"></i> by Francisco Angelo <a href="https://github.com/franciscofeo" target="_blank"><i
+                class="fab fa-github"></i></a></footer>
 
 
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
